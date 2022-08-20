@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 # commenting out original elephant sql database so I can use Heroku's database
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://dixzhcpa:P3IGf0VEANwR4uG1FO-VAaBHZ8MUKR7s@heffalump.db.elephantsql.com/dixzhcpa'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://zfarqkcstxzwbb:753cc730dcb60bdf7d6f7ca62b1bf694d86a9a023c1b1588fbde3e435d64271e@ec2-3-223-242-224.compute-1.amazonaws.com:5432/d60vpf3tooiq23'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://zfarqkcstxzwbb:753cc730dcb60bdf7d6f7ca62b1bf694d86a9a023c1b1588fbde3e435d64271e@ec2-3-223-242-224.compute-1.amazonaws.com:5432/d60vpf3tooiq23'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
